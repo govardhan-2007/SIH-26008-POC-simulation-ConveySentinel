@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ConveySentinel — SIH 26008 Intelligent Conveyor Health Monitoring and Predictive Maintenance System">
+  <title>ConveySentinel | SIH 26008</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="site-nav">
+    <a class="nav-brand" href="#top">SIH <span>26008</span></a>
+    <nav>
+      <a href="#problem">Problem</a>
+      <a href="#solution">Solution</a>
+      <a href="#architecture">Architecture</a>
+      <a href="#live-demo">Live Demo</a>
+      <a href="#impact">Impact</a>
+    </nav>
+    <a class="nav-demo" href="#live-demo"><span>•</span> LIVE SIMULATOR ↗</a>
+  </header>
+
+  <!-- HERO -->
+  <section id="top" class="hero">
+    <div class="hero-copy">
+      <div class="eyebrow">SMART INDIA HACKATHON 2026 • SIH26008</div>
+      <h1>Predict failures.<br><span>Protect production.</span></h1>
+      <p class="hero-text">
+        An intelligent conveyor belt health monitoring and predictive maintenance
+        system for mining operations—combining IoT sensing, one RGB inspection
+        camera, DSP analytics, edge AI, digital twin and PLC/SCADA response.
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="#live-demo">Open Live Simulation ↗</a>
+        <a class="button outline" href="#solution">Explore the Solution ↓</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>REAL-TIME</b><small>Multi-sensor monitoring</small></div>
+        <div><b>AI + VISION</b><small>Sensor / camera fusion</small></div>
+        <div><b>PREDICTIVE</b><small>Failure risk estimation</small></div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="belt-visual">
+        <div class="belt-grid"></div>
+        <div class="mine-hopper">IRON<br>ORE</div>
+        <div class="belt-track">
+          <div class="belt-surface"></div>
+          <div class="ore o1"></div><div class="ore o2"></div><div class="ore o3"></div>
+          <div class="ore o4"></div><div class="ore o5"></div>
+        </div>
+        <div class="roller r1"></div><div class="roller r2"></div><div class="roller r3"></div>
+        <div class="camera-rig">
+          <div class="camera">●</div>
+          <span>RGB CAMERA</span>
+          <i></i>
+        </div>
+        <div class="hero-scan"></div>
+        <div class="joint-marker">J-04</div>
+      </div>
+      <div class="visual-caption">LIVE CONVEYOR HEALTH NETWORK</div>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section id="problem" class="light-section problem">
+    <div class="section-intro">
+      <div class="eyebrow">01 • THE PROBLEM</div>
+      <h2>Conveyor failure<br>starts before the shutdown.</h2>
+      <p>
+        Belt joints, tracking, tension, loading and progressive wear can develop
+        abnormal signatures before a visible production failure. The objective is
+        to detect those signatures early and connect them to an actionable
+        maintenance response.
+      </p>
+    </div>
+    <div class="problem-grid">
+      <article><span>01</span><h3>Joint rupture</h3><p>Progressive joint degradation can become a sudden belt failure.</p></article>
+      <article><span>02</span><h3>Misalignment</h3><p>Tracking deviation increases wear, vibration and operational risk.</p></article>
+      <article><span>03</span><h3>Overloading</h3><p>Abnormal load and tension can accelerate belt and joint damage.</p></article>
+      <article><span>04</span><h3>Reactive maintenance</h3><p>Late detection increases downtime, maintenance effort and spillage.</p></article>
+    </div>
+  </section>
+
+  <!-- SOLUTION -->
+  <section id="solution" class="dark-section solution">
+    <div class="section-intro dark">
+      <div class="eyebrow">02 • THE SOLUTION</div>
+      <h2>From raw signals<br>to maintenance action.</h2>
+      <p>
+        ConveySentinel continuously combines physical sensor telemetry and
+        visual inspection to estimate conveyor health, identify developing
+        faults and support PLC/SCADA intervention.
+      </p>
+    </div>
+    <div class="solution-flow">
+      <div class="flow-card"><b>01</b><strong>Sense</strong><span>Vibration • Temperature • Acoustic • Load/Tension</span></div>
+      <div class="flow-line"></div>
+      <div class="flow-card"><b>02</b><strong>Process</strong><span>RFID • Encoder • TMS320C6748 DSP • FFT features</span></div>
+      <div class="flow-line"></div>
+      <div class="flow-card"><b>03</b><strong>Fuse</strong><span>Edge AI + one RGB inspection camera</span></div>
+      <div class="flow-line"></div>
+      <div class="flow-card"><b>04</b><strong>Respond</strong><span>Risk prediction • Digital Twin • PLC/SCADA</span></div>
+    </div>
+  </section>
+
+  <!-- ARCHITECTURE -->
+  <section id="architecture" class="light-section architecture">
+    <div class="section-intro">
+      <div class="eyebrow">03 • SYSTEM ARCHITECTURE</div>
+      <h2>A connected health<br>monitoring pipeline.</h2>
+      <p>
+        The architecture keeps sensing, DSP processing, vision, AI inference,
+        digital representation and industrial control connected as one workflow.
+      </p>
+    </div>
+
+    <div class="architecture-diagram">
+      <div class="arch-caption">DATA ACQUISITION &amp; EDGE PROCESSING</div>
+      <div class="arch-row">
+        <div class="arch-node">
+          <span>01</span><b>IoT SENSORS</b>
+          <small>Vibration / Temperature<br>Acoustic / Load / Tension</small>
+          <div class="arch-tags"><i>LIVE TELEMETRY</i><i>FIELD SENSING</i></div>
+        </div>
+        <div class="arch-arrow">→</div>
+        <div class="arch-node">
+          <span>02</span><b>EDGE DSP</b>
+          <small>TMS320C6748<br>Filtering / FFT / Features</small>
+          <div class="arch-tags"><i>2.0 kHz</i><i>FFT</i></div>
+        </div>
+        <div class="arch-arrow">→</div>
+        <div class="arch-node">
+          <span>03</span><b>RGB VISION</b>
+          <small>Crack / Tear / Misalignment<br>Single inspection camera</small>
+          <div class="arch-tags"><i>VISION</i><i>97% CONF.</i></div>
+        </div>
+      </div>
+      <div class="arch-connector"></div>
+      <div class="arch-caption bottom">INTELLIGENCE, DIGITAL REPRESENTATION &amp; CONTROL</div>
+      <div class="arch-row">
+        <div class="arch-node accent">
+          <span>04</span><b>EDGE AI FUSION</b>
+          <small>Sensor + vision correlation<br>Failure risk estimation</small>
+          <div class="arch-tags"><i>RISK SCORE</i><i>ANOMALY</i></div>
+        </div>
+        <div class="arch-arrow">→</div>
+        <div class="arch-node accent">
+          <span>05</span><b>DIGITAL TWIN</b>
+          <small>Live asset state<br>Digital passport</small>
+          <div class="arch-tags"><i>CV-04</i><i>LIVE STATE</i></div>
+        </div>
+        <div class="arch-arrow">→</div>
+        <div class="arch-node accent">
+          <span>06</span><b>PLC / SCADA</b>
+          <small>Warning / controlled action<br>Emergency response</small>
+          <div class="arch-tags"><i>ALARM</i><i>CONTROL</i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIVE DEMO -->
+  <section id="live-demo" class="demo-section">
+    <div class="demo-heading">
+      <div>
+        <div class="eyebrow green">04 • LIVE INTERACTIVE PROTOTYPE</div>
+        <h2>See the conveyor<br>health system in action.</h2>
+        <p>
+          Start the simulation and watch the digital twin, sensor streams,
+          progressive faults, AI risk and PLC/SCADA response evolve together.
+        </p>
+      </div>
+      <div class="demo-controls">
+        <button id="fullscreenBtn" class="fullscreen-btn">⛶ FULL SCREEN SIMULATOR</button>
+        <div class="demo-badge">● SIMULATION READY</div>
+      </div>
+    </div>
+
+    <div class="simulator-shell">
+      <header class="sim-header">
+        <div><b>CONVEYSENTINEL</b><span>SIH 26008 • INTELLIGENT CONVEYOR HEALTH MONITORING</span></div>
+        <div id="simStatus" class="sim-status healthy">● SIMULATION READY</div>
+      </header>
+
+      <section class="toolbar">
+        <button id="runBtn" class="btn primary">▶ START</button>
+        <button id="resetBtn" class="btn secondary">↻ RESET</button>
+        <label class="toolbar-label" for="scenario">SCENARIO</label>
+        <select id="scenario" class="futuristic-select">
+          <option>AUTO</option>
+          <option>NORMAL</option>
+          <option>MISALIGNMENT</option>
+          <option>JOINT DEGRADATION</option>
+          <option>BELT TEAR</option>
+          <option>JOINT RUPTURE</option>
+          <option>OVERLOAD</option>
+        </select>
+        <div id="beltSpeed" class="toolbar-readout">BELT 2.8 m/s</div>
+        <div id="missionClock" class="toolbar-readout clock">MISSION 00:00</div>
+      </section>
+
+      <main class="dashboard">
+        <section class="left-column">
+          <div class="sim-card twin-card">
+            <div class="section-title">LIVE CONVEYOR / DIGITAL TWIN</div>
+            <canvas id="twinCanvas"></canvas>
+          </div>
+          <div class="lower-grid">
+            <div class="sim-card graph-card">
+              <div class="section-title-row">
+                <div class="section-title">LIVE SENSOR TREND</div>
+                <select id="graphSelector" class="futuristic-select small">
+                  <option value="vibration">vibration</option>
+                  <option value="temperature">temperature</option>
+                  <option value="acoustic">acoustic</option>
+                  <option value="load">load</option>
+                </select>
+              </div>
+              <canvas id="graphCanvas"></canvas>
+            </div>
+            <div class="sim-card log-card">
+              <div class="section-title">AI / SCADA EVENT LOG</div>
+              <div id="eventLog" class="event-log"></div>
+            </div>
+          </div>
+        </section>
+
+        <aside class="right-column">
+          <div class="sim-card health-card">
+            <div class="section-title">SYSTEM HEALTH</div>
+            <div class="health-row"><span id="healthStatus" class="state healthy">HEALTHY</span><span id="aiConfidence" class="muted">AI CONF. 94%</span></div>
+            <div id="healthValue" class="health-value">97%</div>
+            <div id="riskText" class="risk-text">Failure risk 3%</div>
+            <div class="risk-bar"><div id="riskFill"></div></div>
+          </div>
+
+          <div class="sim-card">
+            <div class="section-title">SENSOR FUSION</div>
+            <div class="sensor-grid">
+              <div class="sensor-box"><div class="sensor-name">VIBRATION</div><div id="vibration" class="sensor-value">2.2</div><div class="sensor-unit">mm/s</div></div>
+              <div class="sensor-box"><div class="sensor-name">TEMPERATURE</div><div id="temperature" class="sensor-value">48</div><div class="sensor-unit">°C</div></div>
+              <div class="sensor-box"><div class="sensor-name">ACOUSTIC</div><div id="acoustic" class="sensor-value">56</div><div class="sensor-unit">dB</div></div>
+              <div class="sensor-box"><div class="sensor-name">LOAD / TENSION</div><div id="load" class="sensor-value">61</div><div class="sensor-unit">%</div></div>
+            </div>
+          </div>
+
+          <div class="sim-card">
+            <div class="section-title">TMS320C6748 DSP</div>
+            <div class="metric-row"><span>FILTERING</span><strong id="dspFilter">ACTIVE • 2.0 kHz</strong></div>
+            <div class="metric-row"><span>FFT / DOMINANT FREQ</span><strong id="dspFft">48.0 Hz</strong></div>
+            <div class="metric-row"><span>FEATURE EXTRACTION</span><strong id="dspFeature">Stable spectrum</strong></div>
+          </div>
+
+          <div class="sim-card">
+            <div class="section-title">EDGE AI • SENSOR + VISION FUSION</div>
+            <div id="aiClass" class="ai-class healthy">HEALTHY</div>
+            <div id="aiDetail" class="ai-detail">Vision: NORMAL OPERATION • 97% confidence<br>Failure risk: 3% • Prediction: Continuous operation</div>
+          </div>
+
+          <div class="sim-card">
+            <div class="section-title">PLC / SCADA</div>
+            <div id="plcStatus" class="plc-status healthy">● RUNNING</div>
+            <div id="plcAlarm" class="plc-alarm">ALARM&nbsp;&nbsp;NONE</div>
+          </div>
+
+          <div class="sim-card passport-card">
+            <div class="section-title">CONVEYOR DIGITAL PASSPORT</div>
+            <div class="passport-row"><span>ASSET</span><strong>CV-04</strong></div>
+            <div class="passport-row"><span>BELT LENGTH</span><strong>1.8 km</strong></div>
+            <div class="passport-row"><span>CURRENT JOINT</span><strong id="passportLocation">J-01</strong></div>
+            <div class="passport-row"><span>VISION</span><strong id="passportVision">NORMAL OPERATION</strong></div>
+            <div class="passport-row"><span>NEXT ACTION</span><strong id="passportAction">Routine monitoring</strong></div>
+          </div>
+        </aside>
+      </main>
+    </div>
+  </section>
+
+  <!-- IMPACT -->
+  <section id="impact" class="light-section impact">
+    <div class="section-intro">
+      <div class="eyebrow">05 • EXPECTED IMPACT</div>
+      <h2>Turn maintenance from<br>reactive to predictive.</h2>
+      <p>
+        ConveySentinel is designed around early detection, continuous asset
+        visibility and actionable intervention rather than waiting for a belt
+        failure to become the signal.
+      </p>
+    </div>
+    <div class="impact-grid">
+      <div class="impact-card"><span class="impact-number">01</span><b>EARLY DETECTION</b><span>Identify abnormal signatures before catastrophic belt damage.</span></div>
+      <div class="impact-card"><span class="impact-number">02</span><b>LESS DOWNTIME</b><span>Support planned interventions instead of unplanned shutdowns.</span></div>
+      <div class="impact-card"><span class="impact-number">03</span><b>SAFER OPERATIONS</b><span>Escalate critical conditions through PLC/SCADA response logic.</span></div>
+      <div class="impact-card"><span class="impact-number">04</span><b>ASSET VISIBILITY</b><span>Maintain a digital health state and passport for the conveyor.</span></div>
+    </div>
+  </section>
+
+  <footer>
+    <div><b>CONVEYSENTINEL</b> • SIH 26008</div>
+    <div>Simulation prototype • One RGB inspection camera • Sensor + vision fusion</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
